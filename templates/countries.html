@@ -3,11 +3,20 @@
 {% block content%}
     
 <body>
-    <h1>Countries</h1>
+    <h2> My Country Bank</h2>
 
     {% for country in countries %}
         
-    <div>{{country.name}}</div><br>
+   <p>
+     <div>
+        <h3>{{country.name}}</h3>
+      <a href="/countries/{{country.id}}">Edit/Delete</a>
+      </div>
+
+
     {% endfor %}
+    
+    
 </body>
+
 {% endblock %}

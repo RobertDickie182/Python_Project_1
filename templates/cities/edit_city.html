@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<form action="/cities/{{city.id}}" method="POST">
+    <div>
+        <label for="name">Name:</label>
+        <input value="{{city.name}}" id="name" name="name" type="text">
+        <label for="visited">Visited:</label>
+        <input id="visited" name="visited" type="checkbox">
+    </div>
+    <input type="submit">
+</form>
+
+{% endblock content %}

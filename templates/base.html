@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <title>Travel Wizard</title>
 </head>
 <body>
@@ -10,8 +11,10 @@
         <nav>
             <ul class="menu">
                 <li><a href="/">Home</a></li>
-                <li><a href="/countries">Countries</a></li>
-                <li><a href="/countries/new">Add Country</a></li>
+                <li><a href="/countries">My Country Bank</a></li>
+                <li><a href="/countries/new">Add a Country</a></li>
+                <li><a href="/cities"> My Destinations</a></li>
+                <li><a href="/cities/new">Add a Destination</a></li>
             </ul>
         </nav>
     </header>

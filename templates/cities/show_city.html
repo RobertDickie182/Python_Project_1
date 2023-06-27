@@ -1,9 +1,12 @@
-{% extends 'base.html' %}
+{% extends "base.html" %}
 
 {% block content %}
-<h1> {{country.name}} </h1>
 
-<form action="/countries/{{country.id}}/delete" method="POST">
+<h2>{{city.name}}</h2>
+<h3>{{city.visited}}</h3>
+<h3>{{city.country.name}}</h3>
+
+<form action="/cities/{{city.id}}/delete" method="POST">
     <button class="btn btn-delete">
         <span class="mdi mdi-delete mdi-24px"></span>
         <span class="mdi mdi-delete-empty mdi-24px"></span>
@@ -13,9 +16,7 @@
 
 <br>
 
-<div><a href="/countries/{{country.id}}/edit">Edit</a></div>
+<div><a href="/cities/{{city.id}}/edit">Edit</a></div>
 
-
-
-
+    
 {% endblock content %}

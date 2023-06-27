@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<form action="/countries/{{country.id}}" method="POST">
+    <div>
+        <label for="name">Name:</label>
+        <input value="{{country.name}}" id="name" name="name" type="text">
+    </div>
+    <input type="submit">
+</form>
+    
+{% endblock content %}

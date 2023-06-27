@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+    
+<body>
+    <h1>My Destinations</h1>
+
+    {% for city in cities %}
+    <div><h2>{{city.name}}</h2></div>
+    <div><h3>{{city.country.name}}</h3></div>
+    <!-- <div><h4>{{city.visited}}</h4></div> -->
+    {% if city.visited == True %}
+    <div><h4>Visited!</h4></div>
+        
+    {% else %}
+
+    <div><h4>Not visited!</h4></div>
+        
+    {% endif %}
+    <a href="/cities/{{city.id}}">Details</a>
+    
+
+        
+    {% endfor %}
+</body>
+{% endblock content %}
