@@ -22,14 +22,29 @@ h6 {
 h1 {
     font-size: 1.8em;
     color: #E1DABD;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
+    padding-left: 10px;
+    padding-top: 50px;
+}
+
+h2 {
+    padding-left: 10px;
+}
+
+h3 {
+    padding-left: 10px;
+}
+
+h4 {
+    padding-left: 10px
 }
 
 a,
 a:link,
 a:visited {
-    color: #0094C6;
+    color: #0f566d;
     text-decoration: none;
+    padding-left: 10px;
 }
 
 a:hover,
@@ -40,23 +55,26 @@ a:focus {
 
 nav {
     padding: 0px;
-    margin: 0px;
-    padding-right: 25px;
+    margin: px;
+    padding-right: 0px;
+    padding-left: 5pxpx;
+
 }
 
 nav ul li {
+    margin-top: 0px;
     margin-bottom: 15px;
     text-transform: uppercase;
 }
 
 ul {
-    padding: 0px;
+    padding: 5px;
     margin: 0px;
     list-style-type: none;
 }
 
 main {
-    padding: 25px;
+    padding: 0px;
 }
 
 .flex {
@@ -69,5 +87,5 @@ main {
 
 #content {
     border-left: 1px solid #254E70;
-    padding-left: 25px;
+    padding-left: 0px;
 }

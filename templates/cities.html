@@ -3,21 +3,23 @@
 {% block content %}
     
 <body>
-    <h1>My Destinations</h1>
+    <h1>My Destinations &#x1F6E9;</h1>
 
     {% for city in cities %}
-    <div><h2>{{city.name}}</h2></div>
+    <p><div><h2>{{city.name}}</h2></div>
     <div><h3>{{city.country.name}}</h3></div>
-    <!-- <div><h4>{{city.visited}}</h4></div> -->
+    <br>
     {% if city.visited == True %}
-    <div><h4>Visited!</h4></div>
+    <div><h4>Visited! &#x2714;</h4></div>
+    </p>
         
     {% else %}
 
-    <div><h4>Not visited!</h4></div>
+    <div><h4>Not visited! &#x2716;</h4></div>
         
     {% endif %}
     <a href="/cities/{{city.id}}">Details</a>
+    <br>
     
 
         

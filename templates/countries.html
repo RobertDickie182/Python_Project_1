@@ -3,13 +3,14 @@
 {% block content%}
     
 <body>
-    <h2> My Country Bank</h2>
+    <h2> My Country Bank &#x1F30E;</h2>
 
     {% for country in countries %}
         
    <p>
      <div>
         <h3>{{country.name}}</h3>
+        <br>
       <a href="/countries/{{country.id}}">Edit/Delete</a>
       </div>
 

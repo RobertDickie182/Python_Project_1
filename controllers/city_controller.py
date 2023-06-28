@@ -25,9 +25,10 @@ def show_city(id):
 def create():
     name = request.form["name"]
     visited = "visited" in request.form
+    comment = request.form["comment"]
     country_id = request.form["country_id"]
     country = country_repository.select(country_id)
-    city = City(name, visited, country)
+    city = City(name, visited, country, comment)
     city_repository.save(city)
     return redirect("/cities")
 
@@ -46,6 +47,7 @@ def update(id):
     city = city_repository.select(id)
     city.name = request.form["name"]
     city.visited = "visited" in request.form
+    city.comment = request.form["comment"]
     city_repository.update(city)
     return redirect(f"/cities/{id}")
 

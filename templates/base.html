@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-    <title>Travel Wizard</title>
+    <title>Travel Scrapbook</title>
 </head>
 <body>
     <header>
@@ -19,8 +19,10 @@
         </nav>
     </header>
     <div class="container">
+
         {% block content %}
         {% endblock %}
     </div>
 </body>
+
 </html>

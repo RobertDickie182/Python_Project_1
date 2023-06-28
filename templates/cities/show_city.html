@@ -3,8 +3,21 @@
 {% block content %}
 
 <h2>{{city.name}}</h2>
-<h3>{{city.visited}}</h3>
+<!-- <h3>{{city.visited}}</h3> -->
+{% if city.visited == True %}
+<div>
+    <h4>Visited!</h4>
+</div>
+
+{% else %}
+
+<div>
+    <h4>Not visited!</h4>
+</div>
+
+{% endif %}
 <h3>{{city.country.name}}</h3>
+<h5>{{city.comment}}</h5>
 
 <form action="/cities/{{city.id}}/delete" method="POST">
     <button class="btn btn-delete">
